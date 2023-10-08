@@ -281,6 +281,8 @@ class App {
       work => work.id === workoutEl.dataset.id
     );
 
+    console.log(workout);
+
     this.#map.setView(workout.coords, this.#mapZoomLevel, {
       animate: true,
       pan: {
